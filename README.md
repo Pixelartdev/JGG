@@ -37,20 +37,20 @@ Es dürfen gerne Veränderung bzw. tests gemacht werden, allerdings darf keine der
 
 ## Info
 
-### Android
-** Changelog **
+#### Android
+**Changelog**
 Version 1.6.2
 - Fehler behoben
 - Vertretungsplan verbessert
 - Neue Funktionen
 
 
-### iOS
-** Changelog **
+#### iOS
+**Changelog**
 
 
-### WebApp
-** Changelog **
+#### WebApp
+**Changelog**
 Version 1.5.1
 - Framework aktualisiert
 - Nachrichten und Foto Seite verbessert
