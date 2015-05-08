@@ -12,6 +12,7 @@ Da alle JGG Apps nun Open Source sind, kann jeder mithelfen sie zu verbessern!
 ## Allgemeines
 Die Apps und ihre Dateien sind alle Open Source, d.h. jeder darf den Quellcode einsehen, allerdings nicht kommerziell weiter nutzen. 
 Jeder darf gerne Fehler auch hier melden, oder Verbesserungen vorschlagen. Die Apps sind in Plattform spezifische Ordner unterteilt.
+Unter dem Ordner release sind immer die aktuellste Versionen der App zu finden.
 
 ## Apps
 Aktuell sind folgende Apps verfügbar:
