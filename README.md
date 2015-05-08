@@ -26,3 +26,33 @@ Alle Apps haben mehr oder weniger die selben Funktionen. Zu diesen zählt:
 - Termine
 - Einstellungen
 - Easter Eggs
+
+## Nutzung
+Daten wie der Vertretungsplan dürfen nicht manipuliert werden! Jeder versuch wird geloggt und der Schule bzw. der zuständigen Behörde mitgeteilt!
+
+Die Nutzung der Apps ist nur für privaten Gebrauch bzw. für Bildungszwecke erlaubt, da dies Apps sind die in tatsächlicher Nutzung sind.
+Es dürfen gerne Veränderung bzw. tests gemacht werden, allerdings darf keine der Apps ohne ausdrücklicher Zustimmung des Entwicklers anderweitig veröffentlicht, bzw. verbreitet werden.
+
+
+## Info
+
+### Android
+** Changelog **
+Version 1.6.2
+- Fehler behoben
+- Vertretungsplan verbessert
+- Neue Funktionen
+
+
+### iOS
+** Changelog **
+
+
+### WebApp
+** Changelog **
+Version 1.5.1
+- Framework aktualisiert
+- Nachrichten und Foto Seite verbessert
+- Einstellungen verbessert
+- Ladezeiten verbessert
+
