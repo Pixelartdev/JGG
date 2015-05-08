@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp" 
+	android:background="@drawable/cards_bg">
+	
+	<TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="0 Artikel"
+        android:textColor="@color/dark_gray"
+        android:textSize="10sp" />
+	
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp"
+		android:layout_below="@+id/date"
+        android:paddingLeft="5dp"
+        android:text="Titel"
+		android:textColor="@color/black"
+        android:textStyle="bold"
+		android:typeface="sans" />
+
+</RelativeLayout>

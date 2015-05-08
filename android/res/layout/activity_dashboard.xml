@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v7.widget.Toolbar 
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+	    android:id="@+id/toolbar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:minHeight="@dimen/abc_action_bar_default_height_material"
+	    android:background="@color/flat_black"
+	    app:theme="@style/CustomToolbar"
+	    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <RelativeLayout
+        android:id="@+id/content_launch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:padding="10dp" >
+
+        <View
+            android:id="@+id/center"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000" />
+
+        <RelativeLayout
+            android:id="@+id/btn_news"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_above="@id/center"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@id/center"
+            android:background="@drawable/red" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10dp"
+                android:text="News"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:src="@drawable/d_news" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_vp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_above="@id/center"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/center"
+            android:background="@drawable/green" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:paddingBottom="10dp"
+                android:text="Vertretungsplan"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:src="@drawable/d_vp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_termin"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/center"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@id/center"
+            android:background="@drawable/blue" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10dp"
+                android:text="Termine"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:src="@drawable/d_termin" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_setting"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/center"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/center"
+            android:background="@drawable/black" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10dp"
+                android:text="Einstellungen"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:src="@drawable/d_setting" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/raumplan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Raumpläne >" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

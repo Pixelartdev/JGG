@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+   
+    <PreferenceCategory 
+        android:title="Werbung" 
+        android:orderingFromXml="true">
+    
+	    <de.pixelart.jgg.android.utils.dialogAdFree
+				android:title="Pop Up Werbung deaktivieren"
+				android:dialogLayout="@layout/dialog"
+				android:positiveButtonText="ok"
+				android:negativeButtonText="" />
+	</PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="ActionBar Farben" 
+        android:orderingFromXml="true">
+        
+        <afzkl.development.colorpickerview.preference.ColorPickerPreference
+            android:defaultValue="0xFF34495E"
+            android:key="launcher_back"
+            android:summary="ActionBar Farbe der des Startbildschirms"
+            android:title="ActionBar Start" />
+        
+        <afzkl.development.colorpickerview.preference.ColorPickerPreference
+            android:defaultValue="0xFFFFFFFF"
+            android:key="launcher_text"
+            android:summary="ActionBar Textfarbe Startbildschirm"
+            android:title="ActionBar Start Text" />
+        
+        
+        
+        <afzkl.development.colorpickerview.preference.ColorPickerPreference
+            android:defaultValue="0xFFE74C3C"
+            android:key="news_back"
+            android:summary="ActionBar Farbe der des Newsbildschirms"
+            android:title="ActionBar News" />
+        
+        <afzkl.development.colorpickerview.preference.ColorPickerPreference
+            android:defaultValue="0xFFFFFFFF"
+            android:key="news_text"
+            android:summary="ActionBar Textfarbe Newsbildschirm"
+            android:title="ActionBar News Text" />
+        
+        
+        
+        <afzkl.development.colorpickerview.preference.ColorPickerPreference
+            android:defaultValue="0xFF2ECC71"
+            android:key="vp_back"
+            android:summary="ActionBar Farbe der des Vertretungsplanbildschirms"
+            android:title="ActionBar Vertretungsplan" />
+        
+        <afzkl.development.colorpickerview.preference.ColorPickerPreference
+            android:defaultValue="0xFFFFFFFF"
+            android:key="vp_text"
+            android:summary="ActionBar Textfarbe Vertretungsplanbildschirms"
+            android:title="ActionBar Vertretungsplan Text" />
+        
+        
+        
+        <afzkl.development.colorpickerview.preference.ColorPickerPreference
+            android:defaultValue="0xFF3498DB"
+            android:key="termin_back"
+            android:summary="ActionBar Farbe der des Terminbildschirms"
+            android:title="ActionBar Termin" />
+        
+        <afzkl.development.colorpickerview.preference.ColorPickerPreference
+            android:defaultValue="0xFFFFFFFF"
+            android:key="termin_text"
+            android:summary="ActionBar Textfarbe Terminbildschirm"
+            android:title="ActionBar Termin Text" />
+        
+        
+        
+        <afzkl.development.colorpickerview.preference.ColorPickerPreference
+            android:defaultValue="0xFF34495E"
+            android:key="details_back"
+            android:summary="ActionBar Farbe der des Nachrichtbildschirms"
+            android:title="ActionBar Nachricht" />
+        
+        <afzkl.development.colorpickerview.preference.ColorPickerPreference
+            android:defaultValue="0xFFFFFFFF"
+            android:key="details_text"
+            android:summary="ActionBar Textfarbe Nachrichtbildschirm"
+            android:title="ActionBar Nachricht Text" />
+        
+        <de.pixelart.jgg.android.utils.dialogColorReset
+		android:title="Farben Resetten"
+		android:dialogLayout="@layout/dialog_colorclear"
+		android:positiveButtonText="@null"
+		android:negativeButtonText="@null" />
+        
+    </PreferenceCategory>
+</PreferenceScreen>

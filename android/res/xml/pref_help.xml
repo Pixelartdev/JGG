@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orderingFromXml="true">
+    
+	<PreferenceCategory
+		android:title="Hilfe" >
+
+		<Preference
+	    	android:title="Einführung" >
+			<intent 
+				android:action="pref_jgg_notification"
+				android:targetPackage="de.pixelart.jgg.android"
+				android:targetClass="de.pixelart.jgg.android.Help" />
+		</Preference>
+		
+		<de.pixelart.jgg.android.utils.dialogHelp
+			android:title="FAQ"
+			android:dialogLayout="@layout/dialog"
+			android:positiveButtonText="ok"
+			android:negativeButtonText="@null" >
+		</de.pixelart.jgg.android.utils.dialogHelp>
+		
+		<Preference
+			android:title="Einen Fehler melden"
+			android:summary="Du hast einen Fehler gefunden? Dann melde ihn!">
+			<intent
+				android:action="android.intent.action.VIEW"
+				android:data="@string/bug_mail" />
+		</Preference>
+		
+	</PreferenceCategory>
+</PreferenceScreen>

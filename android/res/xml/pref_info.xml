@@ -1,0 +1,44 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orderingFromXml="true">
+    
+	<PreferenceCategory
+		android:title="Über die App"
+		android:key="infoCat" >
+
+		<de.pixelart.jgg.android.utils.dialogChangelog
+			android:title="Changelog"
+			android:dialogLayout="@layout/dialog"
+			android:positiveButtonText="ok"
+			android:negativeButtonText="" />
+		
+		<de.pixelart.jgg.android.utils.dialogAd
+				android:title="Wieso Werbung?"
+				android:dialogLayout="@layout/dialog"
+				android:positiveButtonText="ok"
+				android:negativeButtonText="" />
+		
+		<Preference
+    	   android:title="Impressum und mehr">
+		   <intent 
+			  android:action="android.intent.action.VIEW"
+			  android:targetPackage="de.pixelart.jgg.android"
+			  android:targetClass="de.pixelart.jgg.android.Info" />
+	    </Preference>
+	    
+		<Preference
+    	   android:title="Bonus Einstellungen"
+    	   android:key="pref_bonus">
+		   <intent 
+			android:action="pref_jgg_bonus"
+			android:targetPackage="de.pixelart.jgg.android"
+			android:targetClass="de.pixelart.jgg.android.SettingsActivity" />
+	    </Preference>
+		
+		<Preference
+			android:title="App Version"
+			android:enabled="false"
+			android:summary="@string/version" >
+		</Preference>
+		
+	</PreferenceCategory>
+</PreferenceScreen>

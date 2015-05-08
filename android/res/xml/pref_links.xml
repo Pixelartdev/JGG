@@ -1,0 +1,53 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:orderingFromXml="true">
+	<PreferenceCategory
+		android:title="JGG Links">	
+		
+		<Preference
+			android:title="@string/pref_title_jgg"
+			android:summary="jgg-mannheim.de" >
+			<intent
+				android:action="android.intent.action.VIEW"
+				android:data="http://jgg-mannheim.de" />
+		</Preference>
+		<Preference
+			android:title="@string/pref_title_ev"
+			android:summary="ppg-foerderverein.de">
+			<intent
+				android:action="android.intent.action.VIEW"
+				android:data="http://ppg-foerderverein.de" />
+		</Preference>
+		<Preference
+			android:title="Moodle"
+			android:summary="moodle.ppg-mannheim.de">
+			<intent
+				android:action="android.intent.action.VIEW"
+				android:data="http://moodle.ppg-mannheim.de" />
+		</Preference>
+		
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:title="Entwickler">
+		
+		<Preference
+			android:title="@string/pref_title_pixelart"
+			android:summary="pixelartdev.com">
+			<intent
+				android:action="android.intent.action.VIEW"
+				android:data="http://pixelartdev.com" />
+		</Preference>
+		<Preference
+			android:title="@string/pref_title_pfb"
+			android:summary="facebook.com/pixelartdev">
+			<intent
+				android:action="android.intent.action.VIEW"
+				android:data="http://facebook.com/pixelartdev" />
+		</Preference>
+		<Preference
+			android:title="@string/pref_title_ptwitter"
+			android:summary="twitter.com/pixelartdev">
+			<intent
+				android:action="android.intent.action.VIEW"
+				android:data="http://twitter.com/pixelartdev" />
+		</Preference>
+	</PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,154 @@
+/** MENU STYLES **/
+body {
+	background-image: -ms-radial-gradient(right bottom, ellipse farthest-corner, #FFF3B8 0%, #1DA9EF 110.00000000000001%);
+	background-image: -moz-radial-gradient(right bottom, ellipse farthest-corner, #FFF3B8 0%, #1DA9EF 110.00000000000001%);
+	background-image: -o-radial-gradient(right bottom, ellipse farthest-corner, #FFF3B8 0%, #1DA9EF 110.00000000000001%);
+	background-image: -webkit-gradient(radial, right bottom, 0, right bottom, 1011, color-stop(0, #FFF3B8), color-stop(1.10, #1DA9EF));
+	background-image: -webkit-radial-gradient(right bottom, ellipse farthest-corner, #FFF3B8 0%, #1DA9EF 110.00000000000001%);
+	background-image: radial-gradient(ellipse farthest-corner at right bottom, #FFF3B8 0%, #1DA9EF 110.00000000000001%);
+}
+
+.panel .page, .panel .pages, .panel, .view-panel {
+    background: none;
+}
+
+.panel .list-block ul {
+    background: none;
+    border:none;
+}
+
+.panel .list-block .item-link {
+    color:#fff;
+}
+
+.panel .list-block .item-link:active {
+    background: rgba(255,255,255,0.2);
+}
+
+.panel .list-block .item-inner {
+    border-bottom-color:rgba(255,255,255,0.2);
+}
+
+.panel .content-block, .panel .content-block-title {
+    color:#fff;
+}
+
+.panel .list-block .item-link .item-inner {
+    background-image: url("data:image/svg+xml; charset=utf-8, <svg viewBox='0 0 60 120' xmlns='http://www.w3.org/2000/svg'> <path d='m60 61.5-38.25 38.25-9.75-9.75 29.25-28.5-29.25-28.5 9.75-9.75z' fill='%23fff' /></svg>");
+}
+
+/** TABS **/
+.tab {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+/** ICONS **/
+i.icon.icon-news {
+	height: 29px;
+	width: 29px;
+	background-image: url(../img/news.png);
+}
+
+i.icon.icon-vp {
+	height: 29px;
+	width: 29px;
+	background-image: url(../img/vp.png);
+}
+
+i.icon.icon-calendar {
+	height: 29px;
+	width: 29px;
+	background-image: url(../img/calendar.png);
+}
+
+i.icon.icon-archive {
+	height: 29px;
+	width: 29px;
+	background-image: url(../img/archive.png);
+}
+
+i.icon.icon-settings {
+	height: 29px;
+	width: 29px;
+	background-image: url(../img/settings.png);
+}
+
+i.icon.icon-phone {
+	height: 29px;
+	width: 29px;
+	background-image: url(../img/phone.png);
+}
+
+i.icon.icon-menu {
+	height: 29px;
+	width: 29px;
+	background-image: url(../img/menu.png);
+}
+
+i.icon.icon-photo {
+	height: 29px;
+	width: 29px;
+	background-image: url(../img/photo.png);
+}
+
+i.icon.icon-news-b {
+	height: 29px;
+	width: 29px;
+	background-image: url(../img/news-s.png);
+}
+
+i.icon.icon-photo-b {
+	height: 29px;
+	width: 29px;
+	background-image: url(../img/photo-s.png);
+}
+
+i.icon.icon-share-b {
+	height: 29px;
+	width: 29px;
+	background-image: url(../img/share-s.png);
+}
+
+.tab-link.active  i.icon.icon-news-b{
+	height: 29px;
+    width: 29px;
+    background-image: url(../img/news-b.png);
+}
+
+.tab-link.active  i.icon.icon-photo-b {	
+	height: 29px;
+    width: 29px;
+    background-image: url(../img/photo-b.png);
+}
+
+.tab-link.active  i.icon.icon-share-b {	
+	height: 29px;
+    width: 29px;
+    background-image: url(../img/share-b.png);
+}
+
+
+/** Statusbar **/
+html.with-statusbar-overlay .statusbar-overlay {
+	background: #007aff;
+}
+
+/** THUMBNAILS **/
+.thumb {
+    width: 80px;
+    background-position: center center;
+    background-size: cover;	
+}
+
+/** PRELOADER **/
+.infinite-scroll-preloader {
+  margin-top:-20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.infinite-scroll-preloader .preloader {
+  width:34px;
+  height:34px;
+}        

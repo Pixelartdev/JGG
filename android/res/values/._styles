@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.App" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+       <item name="android:windowNoTitle">true</item>
+  <!--  <item name="actionBarStyle">@style/Widget.normal.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Widget.normal.ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item> -->
+    </style>
+    
+    <style name="CustomToolbar" parent="Theme.AppCompat">
+       <item name="android:textColorPrimary">@color/txt</item>
+	   <item name="android:textColorPrimaryInverse">@color/txt</item> 
+       <item name="android:textColorSecondary">@color/txt</item>
+	   <item name="actionMenuTextColor">@color/txt</item>
+       <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+    
+    <style name="Theme.FullScreen" parent="Theme.AppCompat">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="buttonBarStyle">@style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <style name="Theme.black" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/Widget.black.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Widget.black.ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <style name="Theme.red" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/Widget.red.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Widget.red.ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <style name="Theme.green" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/Widget.green.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Widget.green.ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <style name="Theme.blue" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/Widget.blue.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Widget.blue.ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <style name="Widget.normal.ActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="android:backgroundSplit">@color/black</item>
+        <item name="android:backgroundStacked">@color/dark_gray</item>
+        <item name="backgroundStacked">@color/dark_gray</item>
+        <item name="backgroundSplit">@color/black</item>
+        <item name="android:titleTextStyle">@style/odlTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/odlTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="Widget.black.ActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@color/flat_black</item>
+        <item name="android:backgroundSplit">@color/black</item>
+        <item name="android:backgroundStacked">@color/dark_gray</item>
+        <item name="background">@color/flat_black</item>
+        <item name="backgroundStacked">@color/dark_gray</item>
+        <item name="backgroundSplit">@color/black</item>
+        <item name="android:titleTextStyle">@style/odlTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/odlTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="Widget.red.ActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@color/flat_red</item>
+        <item name="android:backgroundSplit">@color/black</item>
+        <item name="android:backgroundStacked">@color/dark_gray</item>
+        <item name="background">@color/flat_red</item>
+        <item name="backgroundStacked">@color/dark_gray</item>
+        <item name="backgroundSplit">@color/black</item>
+        <item name="android:titleTextStyle">@style/odlTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/odlTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="Widget.blue.ActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@color/flat_blue</item>
+        <item name="android:backgroundSplit">@color/black</item>
+        <item name="android:backgroundStacked">@color/dark_gray</item>
+        <item name="background">@color/flat_blue</item>
+        <item name="backgroundStacked">@color/dark_gray</item>
+        <item name="backgroundSplit">@color/black</item>
+        <item name="android:titleTextStyle">@style/odlTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/odlTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="Widget.green.ActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@color/flat_green</item>
+        <item name="android:backgroundSplit">@color/black</item>
+        <item name="android:backgroundStacked">@color/dark_gray</item>
+        <item name="background">@color/flat_green</item>
+        <item name="backgroundStacked">@color/dark_gray</item>
+        <item name="backgroundSplit">@color/black</item>
+        <item name="android:titleTextStyle">@style/odlTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/odlTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_action_overflow</item>
+    </style>
+
+    <style name="odlTheme.ActionBar.TitleTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+</resources>

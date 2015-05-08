@@ -1,0 +1,38 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:orderingFromXml="true">
+<PreferenceCategory
+	android:title="Allgemein">
+	
+    <EditTextPreference
+            android:key="username"
+            android:title="Benutzername"
+            android:summary=""
+            android:defaultValue=""
+            android:dialogTitle="Dein Benutzername" />
+	
+	<ListPreference
+		android:key="post_count"
+		android:title="Artikel Anzahl"
+		android:summary="Definiere die Anzahl von Artikeln welche im 'Aktuelles' Bereich geladen werden sollen"
+		android:defaultValue="10"
+		android:entries="@array/post"
+		android:entryValues="@array/post_values" />
+	
+	<CheckBoxPreference
+        android:defaultValue="false"
+        android:key="isUpdateCheck"
+        android:title="Update check" />
+	
+	<de.pixelart.jgg.android.utils.dialogClear
+		android:title="Such Verlauf löschen"
+		android:dialogLayout="@layout/dialog_clear"
+		android:positiveButtonText="@null"
+		android:negativeButtonText="@null" />
+	
+	<de.pixelart.jgg.android.utils.dialogCache
+		android:title="Cache löschen"
+		android:dialogLayout="@layout/dialog_cache"
+		android:positiveButtonText="@null"
+		android:negativeButtonText="@null" />
+	
+	</PreferenceCategory>
+</PreferenceScreen>

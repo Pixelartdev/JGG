@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JGG</string>
+    <string name="version_txt">Version : </string>
+    <string name="version">1.6.2</string>
+    <string name="gcm_sender">640512251474</string>
+    <string name="blogurl">http://jgg-mannheim.de</string>
+    
+    <!-- Buttons -->
+    <string name="btn_close">Schließen</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_no">Nein</string>
+    <string name="btn_next">Weiter</string>
+    <string name="btn_finish">Fertig</string>
+    
+    <!-- Actions -->
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_refresh">Aktualisieren</string>
+    <string name="action_rate">Bewerte mich</string>
+    
+    <!-- Dialogs -->
+    <string name="dialog_load">Bitte warten...</string>
+    
+    <!-- Messages -->
+    <string name="noti_title">Update verfügbar</string>
+    <string name="noad_title">Keine Werbung mehr!</string>
+    <string name="internet_title">Keine Internetverbindung</string>
+    <string name="title_gcm_alert">Neue Benachrichtigung</string>
+    <string name="title_know">Schon gewusst?</string>
+    
+    <string name="noti_text">Es ist eine neue Version der JGG App vefügbar.</string>
+    <string name="noad_text">Du hast die Popup Werbung erfolgreich deaktiviert!</string>
+    <string name="internet_text">Konnte keine Verbindung zum Internet aufbauen!</string>
+    <string name="bug_mail">mailto:office@pixelartdev.com?subject=Ich habe einen Fehler gefunden
+				&amp;body=Ich habe einen Fehler gefunden in der JGG App!\n\n
+				Version: 1.6.2\n
+				Beschreibung:</string>
+				
+	
+	<string name="msg_post_update"> wurde geändert</string>
+	<string name="msg_new_post">Neuer Beitrag: </string>
+	<string name="msg_new_vp">Neuer Vertretungsplan verfügbar!</string>
+	<string name="msg_update_vp">Vertretungsplan wurder aktualisiert!</string>
+	<string name="msg_harlem">Bestimmt kennst du den Harlem Shake. 
+	    Wusstes du aber das auch die JGG App ihn drauf hat? Nein? Dann gib mal in die Suchleiste:\n
+	     do the harlem shake \nein und staune! (Auf Lautstärke achten!!)</string>
+	     
+	<string name="msg_color">Gefallen dir die Farben der App nicht? Dann drück doch paar mal auf das Pixelart Logo
+	     und staune was für ein Menü erscheint. Vielleicht verbirgt sich ja noch mehr hinter dem Logo...</string>
+
+    <!-- Menu Labels -->
+    <string-array name="menu">
+        <item>Aktuelles</item>
+        <item>Vertretungsplan</item>
+        <item>Termine</item>
+        <item>Einstellungen</item>
+    </string-array>
+    
+    <!-- Tabs Labels -->
+    <string-array name="tabs">
+        <item>Beitrag</item>
+        <item>Fotos</item>
+    </string-array>
+    
+    <!-- Activities -->
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="title_activity_fullscreen_image">Vollbild</string>
+    <string name="title_activity_info">Impressum</string>
+    <string name="title_activity_help">Einführung</string>
+    <string name="title_activity_gcm">GCM Nachrichten</string>
+    
+    
+    <!-- Werbung -->
+    <string name="ad_unit_1">ca-app-pub-2584976074530882/7541191225</string>
+    <string name="ad_unit_2">ca-app-pub-2584976074530882/2971390822</string>
+
+    <!-- Stufe -->
+    <string-array name="stufe">
+        <item>5. Stufe</item>
+        <item>6. Stufe</item>
+        <item>7. Stufe</item>
+        <item>8. Stufe</item>
+        <item>9. Stufe</item>
+        <item>10. Stufe</item>
+        <item>Kursstufe 1</item>
+        <item>Kursstufe 2</item>
+    </string-array>
+    <string-array name="stufe_value">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>k1</item>
+        <item>k2</item>
+    </string-array>
+    
+    <!-- Klassen -->
+    <string-array name="klasse">
+        <item>Alle</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="klasse_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    
+    <!-- Wie viele Beiträge abrufen? -->
+    <string-array name="post">
+        <item>10 (empfohlen)</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>35 (nicht empfohlen)</item>
+    </string-array>
+    <string-array name="post_values">
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>30</item>
+    </string-array>
+
+    
+    <!-- Einstellungen -->
+    <string name="pref_header_general">Allgemein</string>
+    <string name="pref_header_vp">Vertretungsplan</string>
+    <string name="pref_header_links">Links</string>
+    <string name="pref_header_notifications">Benarichtigungen</string>
+    <string name="pref_start_act">Mit was soll die App starten?</string>
+    <string name="pref_title_jgg">JGG Webseite</string>
+    <string name="pref_title_ev">PPG Förderverein</string>
+    <string name="pref_title_pixelart">Pixelart Webseite</string>
+    <string name="pref_title_ptwitter">Pixelart auf Twitter</string>
+    <string name="pref_title_pfb">Pixelart auf Facebook</string>
+    <string name="pref_title_vp_notification">Vertretungsplan Benachrichtigung</string>
+    <string name="pref_title_vibrate">Vibration</string>
+    <string name="pref_title_ringtone">Klingelton</string>
+    <string name="pref_title_notifications">Benachrichtigung</string>
+    <string name="pref_ringtone_silent">Lautlos</string>
+
+</resources>

@@ -1,0 +1,78 @@
+package de.pixelart.jgg.android.utils;
+
+import android.content.Context;
+import android.view.GestureDetector;
+import android.view.GestureDetector.SimpleOnGestureListener;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnTouchListener;
+
+/** Gives callbacks when user does swipe gestures
+ * 
+ * @author Deniz Celebi
+ * @since 1.5.9
+ *
+ */
+public class OnSwipeTouchListener implements OnTouchListener {
+
+	private final GestureDetector gestureDetector;
+	
+	public OnSwipeTouchListener(Context ctx) {
+		gestureDetector = new GestureDetector(ctx,new GestureListener());
+	}
+	
+	private final class GestureListener extends SimpleOnGestureListener {
+		
+		private static final int SWIPE_THRESHOLD = 25;
+		private static final int SWIPE_VELOCITY_THRESHOLD = 20;
+		
+		public boolean onDown(MotionEvent e) {
+			return true;
+		}
+		
+		public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+			boolean result = false;
+			try {
+				float diffY = e2.getY() - e1.getY();
+				float diffX = e2.getX() - e1.getX();
+				if(Math.abs(diffX) > Math.abs(diffY)) {
+					if(Math.abs(diffX) > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
+						if(diffX > 0) {
+							onSwipeRight();
+						}else {
+							onSwipeLeft();
+						}
+					}
+					return true;
+				}else if(Math.abs(diffY) > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
+					if(diffY > 0) {
+						onSwipeBottom();
+					}else {
+						onSwipeTop();
+					}
+				} 
+				return true;
+			}catch(Exception ex) {
+				ex.printStackTrace();
+			}
+			return result;
+		} 
+	}
+	
+	public void onSwipeRight() {
+	}
+	
+	public void onSwipeLeft() {
+	}
+	
+	public void onSwipeTop() {
+	}
+	
+	public void onSwipeBottom() {
+	}
+
+	public boolean onTouch(View v, MotionEvent event) {
+		return gestureDetector.onTouchEvent(event);
+	}
+
+}

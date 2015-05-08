@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/par"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray" >
+
+    <View
+        android:id="@+id/centeri"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/img_ibersicht"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/centeri"
+        android:layout_toLeftOf="@id/centeri"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/jgg_ubersicht_small" />
+    
+    <ImageView
+        android:id="@+id/img_eg"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/centeri"
+        android:layout_toRightOf="@id/centeri"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/jgg_eg_small" />
+    
+    <ImageView
+        android:id="@+id/img_og1"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/centeri"
+        android:layout_toLeftOf="@id/centeri"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/jgg_og1_small" />
+    
+    <ImageView
+        android:id="@+id/img_og2"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/centeri"
+        android:layout_toRightOf="@id/centeri"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/jgg_og2_small" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white" >
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/flat_blue"
+        android:text="@string/btn_next"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text=" Der Vertretungsplan"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/flat_blue" />
+
+    <TextView
+        android:id="@+id/tv_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="25dp"
+        android:text="Bekomme immer den neusten Vertretungsplan auf dein Smartphone.\nDie Version auf deinem Smartphone wird nur aktualisiert, wenn du auf aktualisieren drückst.\nSo sparst du dir unnötige Internetverbindungen." />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_next"
+        android:layout_below="@+id/tv_txt"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/help_3" />
+ 
+</RelativeLayout>

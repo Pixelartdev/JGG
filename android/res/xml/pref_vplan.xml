@@ -1,0 +1,27 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	<PreferenceCategory
+		android:title="Vertretungsplan">
+		
+	    <CheckBoxPreference
+	        android:defaultValue="true"
+	        android:key="vp_notification"
+	        android:title="@string/pref_title_vp_notification" />
+		
+	    <ListPreference
+	        android:entries="@array/stufe"
+	        android:entryValues="@array/stufe_value"
+	        android:key="stufe_list"
+	        android:negativeButtonText="@null"
+	        android:positiveButtonText="@null"
+	        android:title="Wähle deine Stufe" />
+	    
+	    <ListPreference
+	        android:entries="@array/klasse"
+	        android:entryValues="@array/klasse_value"
+	        android:key="klasse_list"
+	        android:negativeButtonText="@null"
+	        android:positiveButtonText="@null"
+	        android:title="Wähle deine Klasse" />
+    
+	</PreferenceCategory>
+</PreferenceScreen>

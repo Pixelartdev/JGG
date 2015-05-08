@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+    
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:minHeight="@dimen/abc_action_bar_default_height_material"
+        android:background="@color/flat_black"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/CustomToolbar" />
+    
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/swipe_container" >
+
+	    <ListView
+	        android:id="@+id/news_list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:divider="@android:color/transparent"
+	        android:dividerHeight="10.0sp"
+	        android:focusable="false"
+	        android:paddingTop="5dp"
+	        android:paddingLeft="10dp"
+	        android:scrollbarStyle="outsideInset"
+	        android:visibility="gone" />
+	    
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

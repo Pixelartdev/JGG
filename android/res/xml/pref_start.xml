@@ -1,0 +1,75 @@
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orderingFromXml="true">
+	
+	<Preference
+    	android:title="Allgemein"
+		android:icon="@drawable/ic_action_settings">
+		<intent 
+			android:action="pref_jgg_general"
+			android:targetPackage="de.pixelart.jgg.android"
+			android:targetClass="de.pixelart.jgg.android.SettingsActivity" />
+	</Preference>
+	
+	<Preference
+    	android:title="Benachrichtigungen"
+		android:icon="@drawable/ic_action_volume_on">
+		<intent 
+			android:action="pref_jgg_notification"
+			android:targetPackage="de.pixelart.jgg.android"
+			android:targetClass="de.pixelart.jgg.android.SettingsActivity" />
+	</Preference>
+	
+	<Preference
+    	android:title="Vertretungsplan"
+		android:enabled="true"
+		android:icon="@drawable/ic_action_event">
+		<intent 
+			android:action="pref_jgg_vp"
+			android:targetPackage="de.pixelart.jgg.android"
+			android:targetClass="de.pixelart.jgg.android.SettingsActivity" />
+	</Preference>
+	
+	<Preference
+		android:title="@string/action_rate"
+		android:icon="@drawable/ic_action_favorite">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="market://details?id=de.pixelart.jgg.android" />
+	</Preference>
+	
+	<Preference
+    	android:title="Über"
+		android:icon="@drawable/ic_info" >
+		<intent 
+			android:action="pref_jgg_info"
+			android:targetPackage="de.pixelart.jgg.android"
+			android:targetClass="de.pixelart.jgg.android.SettingsActivity" />
+	</Preference>
+	
+	<Preference
+    	android:title="Hilfe"
+		android:icon="@drawable/ic_help" >
+		<intent 
+			android:action="pref_jgg_help"
+			android:targetPackage="de.pixelart.jgg.android"
+			android:targetClass="de.pixelart.jgg.android.SettingsActivity" />
+	</Preference>	
+	
+	<Preference
+    	android:title="Links"
+		android:icon="@drawable/ic_action_links">
+		<intent 
+			android:action="pref_jgg_links"
+			android:targetPackage="de.pixelart.jgg.android"
+			android:targetClass="de.pixelart.jgg.android.SettingsActivity" />
+	</Preference>
+	<Preference 
+	    android:title="Schule anrufen"
+	    android:icon="@drawable/ic_action_call">
+		<intent 
+			android:action="android.intent.action.DIAL"
+			android:data="tel:0621-777010" />
+	</Preference>
+	
+</PreferenceScreen>
