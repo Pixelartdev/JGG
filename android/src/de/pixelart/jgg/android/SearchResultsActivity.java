@@ -41,7 +41,7 @@ import com.google.analytics.tracking.android.EasyTracker;
 import com.google.analytics.tracking.android.MapBuilder;
 import com.google.gson.Gson;
 
-import de.pixelart.jgg.android.adapter.PostList;
+import de.pixelart.jgg.android.adapter.PostAdapter;
 import de.pixelart.jgg.android.model.Author;
 import de.pixelart.jgg.android.model.Posts;
 import de.pixelart.jgg.android.model.Recent;
@@ -55,7 +55,7 @@ public class SearchResultsActivity extends ActionBarActivity {
 	List<Posts> finalList = null;
 	Recent recent;
 	ListView searchListView = null;
-	PostList adapter;
+	PostAdapter adapter;
 	SwipeRefreshLayout swipeLayout;
     String burl = "http://www.jgg-mannheim.de/jggapi/get_search_results/?date_format=d.m.Y%20H:i&post_type=post&include=url,title,date,author,thumbnail&search=";
 	ConnectionDetector cd;
@@ -183,7 +183,7 @@ public class SearchResultsActivity extends ActionBarActivity {
             easyTracker.send(MapBuilder.createEvent("Search","Search", query, null).build());
             
             SearchRecentSuggestions suggestions = new SearchRecentSuggestions(this,																  
-			searchProvider.AUTHORITY, searchProvider.MODE);
+			SearchProvider.AUTHORITY, SearchProvider.MODE);
 			suggestions.saveRecentQuery(query, null);
             
             if(query.equals("do the harlem shake")) {
@@ -217,7 +217,7 @@ public class SearchResultsActivity extends ActionBarActivity {
 		}
 		
 		finalList = searchList;
-		adapter = new PostList(this, finalList);
+		adapter = new PostAdapter(this, finalList);
 		searchListView.setVisibility(View.VISIBLE);
 		searchListView.setAdapter(adapter);
 		tv = (TextView) findViewById(R.id.search_result);
@@ -306,7 +306,7 @@ public class SearchResultsActivity extends ActionBarActivity {
 				HttpResponse getResponse = client.execute(getRequest);
 				final int statusCode = getResponse.getStatusLine().getStatusCode();
 				if(statusCode != HttpStatus.SC_OK) { 
-					Log.w("WPBA", "Error " + statusCode + " for URL " + url); 
+					Log.w("JGG", "Error " + statusCode + " for URL " + url); 
 					return null;
 				}
 				HttpEntity getResponseEntity = getResponse.getEntity();
@@ -314,7 +314,7 @@ public class SearchResultsActivity extends ActionBarActivity {
 			} 
 			catch (IOException e) {
 				getRequest.abort();
-				Log.w("WPBA", "Error for URL " + url, e);
+				Log.w("JGG", "Error for URL " + url, e);
 			}
 		return null;
 	    }

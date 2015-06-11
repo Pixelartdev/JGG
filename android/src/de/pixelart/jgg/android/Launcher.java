@@ -1,14 +1,6 @@
 package de.pixelart.jgg.android;
 
-import java.io.IOException;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.util.EntityUtils;
 
 import android.app.AlertDialog;
 import android.app.Notification;
@@ -18,8 +10,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.ColorDrawable;
@@ -46,8 +36,6 @@ import android.widget.TextView;
 
 import com.google.analytics.tracking.android.EasyTracker;
 import com.google.analytics.tracking.android.MapBuilder;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 
 import de.pixelart.jgg.android.fragment.LageFragment;
@@ -64,8 +52,8 @@ public class Launcher extends ActionBarActivity {
 
 	public static final String EXTRA_MESSAGE = "message";
     public static final String PROPERTY_REG_ID = "registration_id";
-    private static final String PROPERTY_APP_VERSION = "appVersion";
-    private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
+ //   private static final String PROPERTY_APP_VERSION = "appVersion";
+ //   private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
     
     String SENDER_ID, regid, responseBody, version, appversion, swipes;
     GoogleCloudMessaging gcm;
@@ -333,7 +321,7 @@ public class Launcher extends ActionBarActivity {
 	}   */
 	
 	/**
-	 * Checkt ob Update durchgeführt wurde
+	 * Checkt ob Update durchgefï¿½hrt wurde
 	 */
 	private void doUpdateDone() {
 		final int currentVersion = R.string.version;
@@ -420,7 +408,7 @@ public class Launcher extends ActionBarActivity {
 	 * 
 	 * GCM related stuff
 	 * 
-	 */
+	 *
 	private boolean checkPlayServices() {
 		int resultCode = GooglePlayServicesUtil.isGooglePlayServicesAvailable(this);
 		if(resultCode != ConnectionResult.SUCCESS) {
@@ -447,7 +435,7 @@ public class Launcher extends ActionBarActivity {
 			return "";
 		}
 		return registrationId;
-	}
+	} **
 	
 	private SharedPreferences getGCMPreferences(Context context) {
 		return getSharedPreferences(Launcher.class.getSimpleName(), Context.MODE_PRIVATE);
@@ -463,7 +451,7 @@ public class Launcher extends ActionBarActivity {
 	}
 	
 	// register device online
-	private class registerInBackground extends AsyncTask<Void, Integer, String> {
+/**	private class registerInBackground extends AsyncTask<Void, Integer, String> {
 		@Override
         protected String doInBackground(Void... params) {
             String msg = "";
@@ -485,7 +473,7 @@ public class Launcher extends ActionBarActivity {
 	
 	/**
 	 * This Function registers your devices for GCM on your WordPress Blog
-	 */
+	 *
 	private void sendRegistrationIdToBackend() {
 		String os = android.os.Build.VERSION.RELEASE;
 		String model = getDeviceName();
@@ -502,7 +490,7 @@ public class Launcher extends ActionBarActivity {
 		}catch(ClientProtocolException e) {
 		}catch(IOException e) {
 		}
-	}
+	} */
 	
 	// Get the device model name with manufacturer
 	public String getDeviceName() {
@@ -527,15 +515,15 @@ public class Launcher extends ActionBarActivity {
 	    }
 	}
 	
-	// Save the device id
-	private void storeRegistrationId(Context context, String regId) {
+	// Save the device id 
+/*	private void storeRegistrationId(Context context, String regId) {
 		final SharedPreferences prefs = getGCMPreferences(context);
 		int appVersion = getAppVersion(context);
 		SharedPreferences.Editor editor = prefs.edit();
 		editor.putString(PROPERTY_REG_ID, regId);
 		editor.putInt(PROPERTY_APP_VERSION, appVersion);
 		editor.commit();
-	}
+	} */
 
 	
 	/** Easter Eggs */	
@@ -603,7 +591,7 @@ public class Launcher extends ActionBarActivity {
 		
 		Log.e("JGG harlem starts", "starts: "+starts);
 		
-		if(starts == 17 || starts == 20 || starts == 23) {
+		if(starts == 17 || starts == 21) {
 			AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
 			alertDialogBuilder.setTitle(R.string.title_know);
 			alertDialogBuilder
@@ -615,6 +603,11 @@ public class Launcher extends ActionBarActivity {
 					}});
 			AlertDialog alertDialog = alertDialogBuilder.create();
 			alertDialog.show();
+			
+			starts++;
+			SharedPreferences.Editor editor = prefs.edit();
+			editor.putInt("harlem_starts", starts);
+			editor.commit();
 		}else {
 			starts++;
 			SharedPreferences.Editor editor = prefs.edit();
@@ -630,7 +623,7 @@ public class Launcher extends ActionBarActivity {
 		
 		Log.e("JGG color starts", "starts: "+starts);
 		
-		if(starts == 5 || starts == 15 || starts == 27) {
+		if(starts == 5 || starts == 10) {
 			AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
 			alertDialogBuilder.setTitle(R.string.title_know);
 			alertDialogBuilder
@@ -642,6 +635,11 @@ public class Launcher extends ActionBarActivity {
 					}});
 			AlertDialog alertDialog = alertDialogBuilder.create();
 			alertDialog.show();
+			
+			starts++;
+			SharedPreferences.Editor editor = prefs.edit();
+			editor.putInt("noti_starts", starts);
+			editor.commit();
 		}else {
 			starts++;
 			SharedPreferences.Editor editor = prefs.edit();

@@ -3,7 +3,7 @@
 
     <string name="app_name">JGG</string>
     <string name="version_txt">Version : </string>
-    <string name="version">1.6.2</string>
+    <string name="version">1.6.3</string>
     <string name="gcm_sender">640512251474</string>
     <string name="blogurl">http://jgg-mannheim.de</string>
     
@@ -34,7 +34,7 @@
     <string name="internet_text">Konnte keine Verbindung zum Internet aufbauen!</string>
     <string name="bug_mail">mailto:office@pixelartdev.com?subject=Ich habe einen Fehler gefunden
 				&amp;body=Ich habe einen Fehler gefunden in der JGG App!\n\n
-				Version: 1.6.2\n
+				Version: 1.6.3\n
 				Beschreibung:</string>
 				
 	

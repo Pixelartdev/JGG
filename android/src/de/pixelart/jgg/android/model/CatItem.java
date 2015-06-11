@@ -6,10 +6,11 @@ import java.io.Serializable;
 public class CatItem implements Serializable {
 
 	private String title;
-	private String id;
+	private int id;
 	private String slug;
 	private String description;
-	private String post_count;
+	private int post_count;
+	private int parent;
 	private String url;
 
 	public String getUrl() {
@@ -20,11 +21,11 @@ public class CatItem implements Serializable {
 		this.url = url;
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -36,12 +37,20 @@ public class CatItem implements Serializable {
 		this.title = title;
 	}
 	
-	public String getPostCount() {
+	public int getPostCount() {
 		return post_count;
 	}
 
-	public void setPostCount(String post_count) {
+	public void setPostCount(int post_count) {
 		this.post_count = post_count;
+	}
+	
+	public int getParent() {
+		return parent;
+	}
+
+	public void setParent(int parent) {
+		this.parent = parent;
 	}
 	
 	public String getDesc() {

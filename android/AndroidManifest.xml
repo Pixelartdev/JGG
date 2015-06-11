@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="de.pixelart.jgg.android"
-    android:installLocation="preferExternal"
-    android:versionCode="21"
+    android:installLocation="auto"
+    android:versionCode="22"
     android:versionName="@string/version" >
 
     <uses-sdk
         android:minSdkVersion="9"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -29,7 +29,7 @@
         
         <!-- Other Shit -->
         <provider
-            android:name="de.pixelart.jgg.android.searchProvider"
+            android:name="de.pixelart.jgg.android.SearchProvider"
             android:authorities="de.pixelart.jgg.android.searchProvider" >
         </provider>        
         
@@ -92,7 +92,7 @@
         
         <!-- Kategorien -->
         <activity
-            android:name="de.pixelart.jgg.android.Cat_List"
+            android:name="de.pixelart.jgg.android.CategoryIndex"
             android:parentActivityName="de.pixelart.jgg.android.News"
             android:configChanges="keyboardHidden" >
             <meta-data 
@@ -102,7 +102,7 @@
         
         <!-- Kategorie -->
         <activity
-            android:name="de.pixelart.jgg.android.Cat"
+            android:name="de.pixelart.jgg.android.Category"
             android:parentActivityName="de.pioxelart.jgg.Cat_List"
             android:configChanges="keyboardHidden" >
             <meta-data 

@@ -45,7 +45,7 @@ import com.google.analytics.tracking.android.EasyTracker;
 import com.google.analytics.tracking.android.MapBuilder;
 import com.google.gson.Gson;
 
-import de.pixelart.jgg.android.adapter.PostList;
+import de.pixelart.jgg.android.adapter.PostAdapter;
 import de.pixelart.jgg.android.model.Author;
 import de.pixelart.jgg.android.model.Posts;
 import de.pixelart.jgg.android.model.Recent;
@@ -55,7 +55,7 @@ public class News extends ActionBarActivity {
 	List<Posts> newsList = null;
 	List<Posts> finalList = null;
 	Recent recent;
-	PostList adapter;
+	PostAdapter adapter;
 	ListView newsListView = null;
 	SwipeRefreshLayout swipeLayout;
 	EasyTracker easyTracker = null;
@@ -162,7 +162,7 @@ public class News extends ActionBarActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 			case R.id.menu_cat:
-				Intent cat = new Intent (News.this, Cat_List.class);
+				Intent cat = new Intent (News.this, CategoryIndex.class);
 				startActivity(cat);
 				return true;
 	        default:
@@ -184,7 +184,7 @@ public class News extends ActionBarActivity {
 
 	public void updateList() {
 		finalList = newsList;
-		adapter = new PostList(this, finalList);
+		adapter = new PostAdapter(this, finalList);
 		newsListView.setVisibility(View.VISIBLE);
 		newsListView.setAdapter(adapter);
 		newsListView.setOnItemClickListener(new OnItemClickListener() {
@@ -273,7 +273,7 @@ public class News extends ActionBarActivity {
 				HttpResponse getResponse = client.execute(getRequest);
 				final int statusCode = getResponse.getStatusLine().getStatusCode();
 				if(statusCode != HttpStatus.SC_OK) { 
-					Log.w("WPBA", "Error " + statusCode + " for URL " + url); 
+					Log.w("JGG", "Error " + statusCode + " for URL " + url); 
 					return null;
 				}
 				HttpEntity getResponseEntity = getResponse.getEntity();
@@ -281,7 +281,7 @@ public class News extends ActionBarActivity {
 			} 
 			catch (IOException e) {
 				getRequest.abort();
-				Log.w("WPBA", "Error for URL " + url, e);
+				Log.w("JGG", "Error for URL " + url, e);
 			}
 		return null;
 	    }

@@ -8,10 +8,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import de.pixelart.jgg.android.R;
-import de.pixelart.jgg.android.searchProvider;
+import de.pixelart.jgg.android.SearchProvider;
 
 /**
- * Löschte den Suchverlauf.
+ * Lï¿½schte den Suchverlauf.
  * @author Deniz
  * @since 1.0.1
  */
@@ -45,7 +45,7 @@ public class dialogClear extends DialogPreference {
 	
 	private void xy(){
 		SearchRecentSuggestions suggestions = new SearchRecentSuggestions(con,
-		       searchProvider.AUTHORITY, searchProvider.MODE);
+		       SearchProvider.AUTHORITY, SearchProvider.MODE);
 		suggestions.clearHistory();
 	}
 }

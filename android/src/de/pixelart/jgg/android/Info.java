@@ -89,13 +89,13 @@ public class Info extends ActionBarActivity {
 		alertDialogBuilder.setTitle("Hallo im Profi-Modus");
 		alertDialogBuilder
 			.setMessage("Du bist jetzt im Profi-Modus und hast damit ein paar coole Sachen freigeschaltet.\n" +
-					"Du kannst jetzt z.B. die Farben der App ändern!\n" +
+					"Du kannst jetzt z.B. die Farben der App Ã¤ndern!\n" +
 					"- Deniz")
 			.setCancelable(false)
 			.setPositiveButton("Ok Deniz",new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog,int id) {
 				}})
-			.setNegativeButton(Html.fromHtml("Schließen"),new DialogInterface.OnClickListener() {
+			.setNegativeButton(Html.fromHtml("SchlieÃŸen"),new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog,int id) {
 					dialog.dismiss();
 					finish();
@@ -125,7 +125,7 @@ public class Info extends ActionBarActivity {
 	
 	private void WussteIchAlert(){
 		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-		alertDialogBuilder.setTitle("Hör auf!");
+		alertDialogBuilder.setTitle("HÃ¶r auf!");
 		alertDialogBuilder
 			.setMessage("Ok, jetzt reicht es!")
 			.setCancelable(false)
@@ -148,7 +148,7 @@ public class Info extends ActionBarActivity {
 		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
 		alertDialogBuilder.setTitle("Willkommen im Babo-Modus");
 		alertDialogBuilder
-			.setMessage("Hier gibts nur extras für den ultimative Boss!\n" +
+			.setMessage("Hier gibts nur extras fï¿½r den ultimative Boss!\n" +
 					"Erstmal deine Handynummer:" + handynr +
 					"\nDeine E-Mail:" + email)
 			.setCancelable(false)
@@ -156,7 +156,7 @@ public class Info extends ActionBarActivity {
 				public void onClick(DialogInterface dialog,int id) {
 					
 				}})
-			.setNegativeButton(Html.fromHtml("Schließen"),new DialogInterface.OnClickListener() {
+			.setNegativeButton(Html.fromHtml("Schlieï¿½en"),new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog,int id) {
 					dialog.dismiss();
 				}});

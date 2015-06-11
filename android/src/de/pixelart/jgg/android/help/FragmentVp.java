@@ -10,7 +10,7 @@ import android.widget.Button;
 import de.pixelart.jgg.android.R;
 
 /**
- * Einführung Vertretungsplan
+ * EinfÃ¼hrung Vertretungsplan
  * @author Deniz
  * @since 1.5.9
  */
