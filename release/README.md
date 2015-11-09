@@ -1,5 +1,5 @@
 # Release
 
-Hier stehen immer die aktuellsten Versionen der Apps zum download bereit. 
-F�r alle offenen Plattformen (Android, Windows, Mac OS,...) k�nnen die Apps direkt installiert werden.
-Bei Plattformen wie iOS kann man zwar die App runterladen, braucht aber besondere Rechte um diese zu installieren (Entwickler Ger�t, Jailbreak, ...).
+Hier stehen immer die aktuellsten Versionen der Apps zum download bereit.
+Hab ihr ein Android Gerät (Smartphone / Tablet), könnt ihr es euch  hier runterladen und auf dem Gerät installieren.
+Hab ihr ein iOS Gerät (iPhone, iPad) könnt ihr es nur installieren wenn ihr ein Entwickler Gerät oder ein gejailbreaktes Gerät besitzt, das es sonst nur über den AppStore geht.
