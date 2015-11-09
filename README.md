@@ -1,38 +1,43 @@
 # JGG Apps
 
-Hier findest du alle Apps für alle verfügbare Platformen, auf der die JGG App verfügbare ist.
-Da alle JGG Apps nun Open Source sind, kann jeder mithelfen sie zu verbessern!
+Hier findest du alle Apps fÃ¼r alle verfÃ¼gbare Plattformen, auf der die JGG App verfÃ¼gbar ist.
+Da alle JGG Apps nun Open Source sind, kann jeder mithelfen sie weiter zu verbessern!
 
-## Übersicht
+## Ãœbersicht
 1. Allgemeines
 2. Die Apps
 3. Nutzung
-4. Info
+4. Info / Rechtliches
+
 
 ## Allgemeines
-Die Apps und ihre Dateien sind alle Open Source, d.h. jeder darf den Quellcode einsehen, allerdings nicht kommerziell weiter nutzen. 
-Jeder darf gerne Fehler auch hier melden, oder Verbesserungen vorschlagen. Die Apps sind in Plattform spezifische Ordner unterteilt.
-Unter dem Ordner release sind immer die aktuellste Versionen der App zu finden.
+Die Apps und ihre Dateien sind alle Open Source, d.h. jeder darf den Quellcode einsehen, allerdings nicht kommerziell weiter nutzen / verkaufen.
+Es steht jedem offen gerne Fehler auch hier zu melden, oder Verbesserungen vorzuschlagen / zu entwicklen. 
+Die Apps sind in Plattform spezifische Ordner unterteilt, d.h. den Code fÃ¼r die Android App findet ihr im Ordner Android; den Code fÃ¼r die WebAPP im Ordner WebApp, und im Ordner Archiv findet ihr alle bisherigen App Versionen und im Ordner release die aktuellesten.
 
 ## Apps
-Aktuell sind folgende Apps verfügbar:
+Aktuell sind folgende Apps verfÃ¼gbar:
 - Android
 - WebApp
 
+iOS befindet sich zur Zeit in Entwicklung.
+
 Alle Apps werden immer aktualisiert und gepflegt.
-Alle Apps haben mehr oder weniger die selben Funktionen. Zu diesen zählt:
+Alle Apps haben mehr oder weniger die selben Funktionen. Zu diesen zÃ¤hlen:
 - Nachrichten lesen, suchen, teilen
 - Fotos ansehen
-- Vertretungsplan
-- Termine
+- Vertretungsplan fÃ¼r den aktuellen und nÃ¤chsten Schultag betrachten
+- Offizielle Termine der Schule betrachten
 - Einstellungen
-- Easter Eggs
+- Easter Eggs fÃ¼r den SpaÃŸ zwischen durch
+
+
 
 ## Nutzung
-Daten wie der Vertretungsplan dürfen nicht manipuliert werden! Jeder versuch wird geloggt und der Schule bzw. der zuständigen Behörde mitgeteilt!
+Daten wie der Vertretungsplan dÃ¼rfen nicht manipuliert werden! Jeder Versuch wird geloggt und der Schule bzw. der zustÃ¤ndigen BehÃ¶rde mitgeteilt! Es wird zwar jede VerÃ¤nderung an der App geprÃ¼ft bevor Sie freigegeben wird, aber dennoch werden auch die Versuche gemeldet.
 
-Die Nutzung der Apps ist nur für privaten Gebrauch bzw. für Bildungszwecke erlaubt, da dies Apps sind die in tatsächlicher Nutzung sind.
-Es dürfen gerne Veränderung bzw. tests gemacht werden, allerdings darf keine der Apps ohne ausdrücklicher Zustimmung des Entwicklers anderweitig veröffentlicht, bzw. verbreitet werden.
+Die Nutzung der Apps ist nur fÃ¼r privaten Gebrauch bzw. fÃ¼r Bildungszwecke erlaubt, da dies Apps sind die in tatsÃ¤chlicher Nutzung sind.
+Es dÃ¼rfen gerne VerÃ¤nderung bzw. tests gemacht werden, allerdings darf keine der Apps ohne ausdrÃ¼cklicher Zustimmung des Entwicklers anderweitig verÃ¶ffentlicht, bzw. verbreitet werden.
 
 
 ## Info
