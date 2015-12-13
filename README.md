@@ -1,6 +1,6 @@
 # JGG Apps
 
-Hier findest du alle Apps für alle verfügbare Plattformen, auf der die JGG App verfügbar ist.
+Hier findest du alle Apps für alle Plattformen, auf der die JGG App verfügbar ist.
 Da alle JGG Apps nun Open Source sind, kann jeder mithelfen sie weiter zu verbessern!
 
 ## Übersicht
@@ -40,25 +40,26 @@ Die Nutzung der Apps ist nur für privaten Gebrauch bzw. für Bildungszwecke erl
 Es dürfen gerne Veränderung bzw. tests gemacht werden, allerdings darf keine der Apps ohne ausdrücklicher Zustimmung des Entwicklers anderweitig veröffentlicht, bzw. verbreitet werden.
 
 
-## Info
+## Changelogs
 
-#### Android
-**Changelog**
+**Android**
 Version 1.6.2
 - Fehler behoben
 - Vertretungsplan verbessert
 - Neue Funktionen
 
 
-#### iOS
-**Changelog**
+**iOS**
 
 
-#### WebApp
-**Changelog**
-Version 1.5.1
+**WebApp**
+Version 1.7.4
 - Framework aktualisiert
 - Nachrichten und Foto Seite verbessert
 - Einstellungen verbessert
-- Ladezeiten verbessert
+- Ladezeiten verkürzt
+- Vertretungsplan hinzugefügt
+- Einstellungen erweitert
+- Vertretungsplan Filter
+- Stabilität verbessert
 
