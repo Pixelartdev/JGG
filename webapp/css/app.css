@@ -1,11 +1,10 @@
 /** MENU STYLES **/
 body {
-	background-image: -ms-radial-gradient(right bottom, ellipse farthest-corner, #FFF3B8 0%, #1DA9EF 110.00000000000001%);
-	background-image: -moz-radial-gradient(right bottom, ellipse farthest-corner, #FFF3B8 0%, #1DA9EF 110.00000000000001%);
-	background-image: -o-radial-gradient(right bottom, ellipse farthest-corner, #FFF3B8 0%, #1DA9EF 110.00000000000001%);
-	background-image: -webkit-gradient(radial, right bottom, 0, right bottom, 1011, color-stop(0, #FFF3B8), color-stop(1.10, #1DA9EF));
-	background-image: -webkit-radial-gradient(right bottom, ellipse farthest-corner, #FFF3B8 0%, #1DA9EF 110.00000000000001%);
-	background-image: radial-gradient(ellipse farthest-corner at right bottom, #FFF3B8 0%, #1DA9EF 110.00000000000001%);
+	background: #074d55;
+	background-image: -moz-radial-gradient(center,ellipse cover,#a7cfdf 0%,#23538a 100%);
+	background-image: -webkit-gradient(radial,right bottom,0px,left top,100%,color-stop(0%,#6967a5),color-stop(50%,#2075a1),color-stop(100%,#074d55));
+	background-image: -webkit-radial-gradient(right bottom,ellipse cover,#6967a5 0%,#2075a1 50%,#074d55 100%);
+	background-image: radial-gradient(ellipse at right bottom,#6967a5 0%,#2075a1 50%,#074d55 100%);
 }
 
 .panel .page, .panel .pages, .panel, .view-panel {
@@ -151,4 +150,66 @@ html.with-statusbar-overlay .statusbar-overlay {
 .infinite-scroll-preloader .preloader {
   width:34px;
   height:34px;
-}        
+}   
+
+
+/** LISTS  **/ 
+.list-block .item-text,
+.list-block .item-title,
+.list-block .item-subtitle {
+	-webkit-line-clamp: 99;
+	max-height: none;
+	height: auto;
+	width:100%;
+	white-space: normal;
+}
+
+.list-block .item-input {
+	width: auto;
+}     
+
+
+
+/** VP **/
+.vp-red {
+	background: #e74c3c;
+	color: #fff;
+}
+
+.vp-green {
+	background: #2ecc71;
+	color: #fff;
+}
+
+.vp-tur {
+	background: #3498db;
+	color: #fff;
+}
+
+.vp-red .item-text,
+.vp-green .item-text,
+.vp-tur .item-text {
+	color: #fff;
+}
+
+.list-block:not(.media-list)  .vp-red.accordion-item-expanded:not(.media-item) > .item-link .item-inner,
+.list-block:not(.media-list)  .vp-green.accordion-item-expanded:not(.media-item) > .item-link .item-inner,
+.list-block:not(.media-list) .vp-tur.accordion-item-expanded:not(.media-item) > .item-link .item-inner {
+	background-image: url("data:image/svg+xml;charset=utf-8, %3Csvg%20viewBox%3D%270%200%2060%20120%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%0A%3Cpath%20d%3D%27m60%2061.5-38.25%2038.25-9.75-9.75%2029.25-28.5-29.25-28.5%209.75-9.75z%27%20transform%3D%27translate(115%2C%2030)%20rotate(90)%27%20fill%3D%27%23ffffff%27%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.vp-red .item-link .item-inner,
+.vp-green .item-link .item-inner,
+.vp-tur .item-link .item-inner {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%270%200%2060%20120%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27m60%2061.5-38.25%2038.25-9.75-9.75%2029.25-28.5-29.25-28.5%209.75-9.75z%27%20fill%3D%27%23ffffff%27%2F%3E%3C%2Fsvg%3E");
+}
+
+.vp-red .content-block,
+.vp-green .content-block,
+.vp-tur .content-block {
+	color: #fff;
+}
+
+
+
+

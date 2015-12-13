@@ -1,32 +1,50 @@
 <div class="navbar">
-  <div class="navbar-inner">
-    <div class="left">
-	   <a href="#" class="link icon-only open-panel"><i class="icon icon-menu"></i></a>
-    </div>
-    <div class="center sliding">Vertretungsplan</div>
-  </div>
+	<div class="navbar-inner">
+		<div class="left sliding">
+			<a href="#" class="link icon-only open-panel"><i class="icon icon-menu"></i></a>
+		</div>
+		<div class="center sliding">Vertretungsplan</div>
+		<div class="right sliding"> </div>
+		
+        <div class="subnavbar sliding">
+			<div class="buttons-row theme-blue">
+				<a href="#tab1" class="button tab-link active dateH"></a>
+				<a href="#tab2" class="button tab-link dateM"></a>
+			</div>
+        </div>
+	</div>
 </div>
 
-<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes, minimal-ui">
 
-<div data-page="vp" class="page">
-	<div class="page-content pull-to-refresh-content" data-distance="100">
-	<!--	<div class="pull-to-refresh-layer">
-            <div class="preloader"></div>
-            <div class="pull-to-refresh-arrow"></div>
-        </div> -->
+<div data-page="vp" class="page with-subnavbar">
+	<div class="page-content pull-to-refresh-content hide-bars-on-scroll" data-distance="40">
+		<div class="pull-to-refresh-layer">
+			<div class="preloader"></div>
+			<div class="pull-to-refresh-arrow"></div>
+		</div>
 		
-		<div class="content-block">
-			<div class="dateH content-block-title"></div>
-			<div class="vpH">
-			
+		<div class="tabs">
+			<div id="tab1" class="tab active">
+				<div class="date content-block-title"></div>
+				<div id="vpH" class="vpH">
+				</div>
+			</div>
+			<div id="tab2" class="tab">
+				<div class="date content-block-title"></div>
+				<div id="vpM" class="vpM">
+				</div>
 			</div>
 		</div>
-		<div class="content-block">
-			<div class="dateM content-block-title"></div>
-			<div class="vpM">
 		
-			</div>
-		</div>
     </div>
+	
+	<div class="toolbar">
+		<div class="toolbar-inner">
+			<a href="#" class="link" ></a>
+			<a href="#" class="link  mehr" >Mehr</a>
+		</div>
+	</div>
+	
 </div>
+
+

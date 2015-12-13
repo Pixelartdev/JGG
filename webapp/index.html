@@ -1,137 +1,170 @@
 <!DOCTYPE html>
-<html class="with-statusbar-overlay">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-title" content="Johanna-Geissmar-Gymnasium">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<html class="with-statusbar-overlay" manifest="manifest.php" >
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="Johanna-Geissmar-Gymnasium">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	
-    <title>Johanna-Geissmar-Gymnasium</title>
+		<title>Johanna-Geissmar-Gymnasium</title>
+		<link rel="shortcut icon" href="img/ios/icon_ipad_ios7_retina.png" type="image/x-icon">
+		
+		<link rel="stylesheet" href="css/f7.ios.min.css">
+		<link rel="stylesheet" href="css/f7.ios.colors.min.css">
+		<link rel="stylesheet" href="css/f7.3d.min.css">
+		<link rel="stylesheet" href="css/app.css">
 	
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/framework7.min.css">
-    <link rel="stylesheet" href="css/framework7.3dpanels.min.css">
-	<link rel="stylesheet" href="css/framework7.themes.min.css">
-    <link rel="stylesheet" href="css/my-app.css">
-	<link rel="stylesheet" href="css/vp.css">
-	
-	<script type="text/javascript" src="js/ios_splash.js"></script>
-	
-  </head>
-  <body>
-    <div class="statusbar-overlay"></div>
-    <div class="panel-overlay"></div>
-  
-	<!-- Slider start  -->
-	<div class="panel panel-left panel-reveal">
-	 <div class="view view-panel">
-	  <!-- Menu start -->
-	  <div class="content-block-title">Men&uuml;</div>
-	  <div class="list-block">
-        <ul>
-		   <li><a href="index.html" class="item-link close-panel">
-                <div class="item-content">
-				<div class="item-media">
- 				  <i class="icon icon-news"></i> 
-				</div>
-				<div class="item-inner"> 
-				  <div class="item-title">News</div>
-				</div></div>
-		    </a></li>
-			<li><a href="vp.html" class="item-link close-panel">
-                <div class="item-content">
-				<div class="item-media">
- 				  <i class="icon icon-vp"></i> 
-				</div>
-				<div class="item-inner">
-                    <div class="item-title">Vertretungsplan</div>
-                </div></div>
-		    </a></li>
-			<li><a href="categories.html" class="item-link close-panel">
-                <div class="item-content">
-				<div class="item-media">
- 				  <i class="icon icon-archive"></i> 
-				</div>
-				<div class="item-inner">
-                    <div class="item-title">Kategorien</div>
-                </div></div>
-		    </a></li>
-		<!-- NOT yet
-     		<li><a href="termine.html" class="item-link close-panel">
-                <div class="item-content">
-				<div class="item-media">
- 				  <i class="icon icon-calendar"></i> 
-				</div>
-				<div class="item-inner">
-                    <div class="item-title">Termine</div>
-                </div></div>
-		    </a></li>  -->
-			<li><a href="settings.html" class="item-link close-panel">
-                <div class="item-content">
-				<div class="item-media">
- 				  <i class="icon icon-settings"></i> 
-				</div>
-				<div class="item-inner">
-                    <div class="item-title">Einstellungen</div>
-                </div></div>
-		    </a></li>
-		</ul>
-      </div>
-	  <!-- Menu end -->
+	</head>
+	<body>
+		<div class="statusbar-overlay"></div>
+		<div class="panel-overlay"></div>
 	  
-	  <div class="list-block">
-        <ul>
-		   <li><a href="tel:0621-777010" class="external item-link">
-                <div class="item-content">
-				<div class="item-media">
- 				  <i class="icon icon-phone"></i> 
-				</div>
-				<div class="item-inner"> 
-				  <div class="item-title">Schule anrufen</div>
-				</div></div>
-		    </a></li>
-		</ul>
-	  </div>
-	 </div>
-    </div>
-	<!-- Slider end -->
-    
-    <!-- Views-->
-    <div class="views">
-      <div class="view view-main">
-        
-		<div class="navbar bg-blue color-white theme-white">
-          <div class="navbar-inner">
-		    <div class="left">
-			  <a href="#" class="link icon-only open-panel"><i class="icon icon-menu"></i></a>
-            </div>
-            <div class="center sliding">News</div>
-          </div>
-        </div>
-		
-        <div class="pages navbar-through toolbar-through">
-        
-		<!-- conent starts here -->
-          <div data-page="news-list" class="page">
-            <div class="page-content pull-to-refresh-content infinite-scroll" data-distance="100">
-              <div class="pull-to-refresh-layer">
-                <div class="preloader"></div>
-                <div class="pull-to-refresh-arrow"></div>
-              </div>
-			</div>
+		<!-- Slider start  -->
+		<div class="panel panel-left panel-reveal">
+			<div class="view view-panel">
 			
-          </div>
-        </div>
+				<!-- Menu start -->
+				<div class="content-block-title">Men&uuml;</div>
+				<div class="list-block">
+					<ul>
+						<li>
+							<a href="index.html" class="item-link close-panel">
+								<div class="item-content">
+									<div class="item-media">
+										<i class="icon icon-news"></i> 
+									</div>
+									<div class="item-inner"> 
+										<div class="item-title">News</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="vp.html" class="item-link close-panel">
+								<div class="item-content">
+									<div class="item-media">
+										<i class="icon icon-vp"></i> 
+									</div>
+									<div class="item-inner">
+										<div class="item-title">Vertretungsplan</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="categories.html" class="item-link close-panel">
+								<div class="item-content">
+									<div class="item-media">
+										<i class="icon icon-archive"></i> 
+									</div>
+									<div class="item-inner">
+										<div class="item-title">Kategorien</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="settings.html" class="item-link close-panel">
+								<div class="item-content">
+									<div class="item-media">
+										<i class="icon icon-settings"></i> 
+									</div>
+									<div class="item-inner">
+										<div class="item-title">Einstellungen</div>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- Menu end -->
+		  
+				<div class="list-block">
+					<ul>
+						<li>
+							<a href="tel:0621-777010" class="external item-link">
+								<div class="item-content">
+									<div class="item-media">
+										<i class="icon icon-phone"></i> 
+									</div>
+									<div class="item-inner"> 
+										<div class="item-title">Schule anrufen</div>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Slider end -->
 		
-      </div>
-    </div>
-	
-    <script type="text/javascript" src="js/framework7.min.js"></script>
-    <script type="text/javascript" src="js/framework7.3dpanels.min.js"></script>
-	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="js/my-app.js"></script>
-	
-  </body>
+		
+		<!-- Views-->
+		<div class="views">
+			<div class="view view-main">
+			
+				<div class="navbar bg-blue color-white theme-white">
+					<div class="navbar-inner">
+						<div class="left">
+							<a href="#" class="link icon-only open-panel">
+								<i class="icon icon-menu"></i>
+							</a>
+						</div>
+						<div class="center sliding">News</div>
+					</div>
+				</div>
+			
+				<div class="pages navbar-through toolbar-through">
+			
+					<!-- conent starts here -->
+					<div data-page="news-list" class="page">
+						<div class="page-content pull-to-refresh-content infinite-scroll" data-distance="40">
+							<div class="pull-to-refresh-layer">
+								<div class="preloader"></div>
+								<div class="pull-to-refresh-arrow"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+		
+		<!-- Vertretungsplan verstehen Popup -->
+		<div class="popup popup-explain">
+			<div class="content-block">
+				<h3>Vertretungsplan</h3>
+				<p><a href="#" class="close-popup">Schlie&szlig;en</a></p>
+				<br>
+				<p><b>Farben</b></p>
+				<p>Es gibt 3 Farben auf dem Vertretungsplan:
+					<ul>
+						<li><b>Gr&uuml;n</b>, was Freistunde bedeuted</li>
+						<li><b>Rot</b>, was neu hinzugef&uuml;gt bedeuted</li>
+						<li><b>T&uuml;rkis/Blau</b>, was Raumtausch / Raumwechsel bedeuted</li>
+					</ul>
+				</p>
+				<br>
+				<p><b>Daten</b></p>
+				<p>Nun gibt es verschiedene Spalten. Jede Spalten auf dem Plan welche in Klammer gesetzt ist, bedeuted urspr&uuml;nglich.
+					Bei einem "(Fach)" w&uuml;rde es bedeuten das dieses Fach normalerweise in der Stunde dran gewesen w&auml;re, aber vertreten wird oder ausf&auml;llt.
+					Wenn in der Fach Spalte nichts steht, hei&szlig;t es das regul&auml;r das Fach statt findet aber u.U. mit einem anderen Lehrer.
+					Wenn in der Fach Spalte ein anderes Fach steht, bedeuted dies das ein andere Lehrer Unterrichted der vlt. sein eigenes Fach unterrichtet.
+					Wenn Vertretung oder Aufgaben steht, hei&szlig;t es das dieses Fach ausf&auml;llt aber ein anderer Vertretungslehrer kommt und u.U. Aufgaben hat.
+					Dies bezieht sich allerdings auf den orginalen Vertretungsplan, da der in der App so &uuml;berarbeitet ist, dass das wichtigste schon da steht.
+				</p>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="js/f7.min.js"></script>
+		<script type="text/javascript" src="js/f7.3d.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/ios_splash.js"></script>
+		<script type="text/javascript" src="js/functions.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		
+	</body>
 </html>
